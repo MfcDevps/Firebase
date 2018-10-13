@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Firebase</title>
+        <!-- Firebase App is always required and must be first -->
+        <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase-app.js"></script>
+
+        <!-- Add additional services that you want to use -->
+        <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase-firestore.js"></script>
+        <style>
+            div{
+                margin: 30px auto;
+                max-width: 270px;
+            }
+            h1{
+                color: #ffcc29;
+            }
+            h3,h1{
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            input{
+                display: block;
+                padding: 11px 10px;
+                min-width: 259px;
+                margin-bottom: 10px;
+                border: 1px solid #e0dddd;
+                border-radius: 5px;
+            }
+            button{
+                display: block;
+                background: #3fb1e4;
+                PADDING: 9PX 27PX;
+                border-radius: 5px;
+                border: none;
+                color: #FFF;
+            }
+            span{
+                display: block;
+                margin-top: 20px;
+                text-align: center;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+    
+    <div>
+        <h1>Firebase Database</h1>
+        <h3>Member Information</h3>
+        <input type="text" id="name" placeholder="Name"/>
+        <input type="email" id="email" placeholder="Email"/>
+        <input type="departement" id="departement" placeholder="Departement"/>
+        <button id="save">Save</button>
+        <span id="status"></span>
+    </div>  
+
+    <script src="app.js"></script>
+    </body>
+</html>
